@@ -7,7 +7,7 @@ Maven pom.xml changes:
 
 1) Add dependency of junit and its version. 
 
-<dependency>
+			<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<version>4.9</version>
@@ -29,7 +29,7 @@ Maven pom.xml changes:
 		      
 3) You can specify test-resources in pom.xml for achieving step 2
 
-<testResources>
+			<testResources>
 			<testResource>
 				<directory>src/main/resources/xyz/</directory>
 				<filtering>true</filtering>
@@ -44,7 +44,7 @@ Maven pom.xml changes:
 
 5) We can also exclude some classes or folders during compile time for testing. Something like specified below
 
-<plugin>
+				<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>2.0.2</version>
 				<configuration>
